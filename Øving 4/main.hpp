@@ -1,3 +1,4 @@
 
+//void getInfo();
 
 int main();
