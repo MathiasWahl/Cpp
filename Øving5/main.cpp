@@ -23,11 +23,12 @@ int main(int argc, char const *argv[]) {
 
     CardDeck *myDeck = new CardDeck();
   */
-  Card *myCard = new Card::Card();
-  //myCard->initialize(HEARTS, TEN);
-  CardDeck *myDeck = new CardDeck::CardDeck();
-/*  myDeck->shuffle();
-  myDeck->print();*/
+  Card *myCard = new Card();
+  myCard->initialize(HEARTS, TEN);
+  cout << myCard ->toStringShort() << endl;
+  CardDeck *myDeck = new CardDeck();
+  myDeck->shuffle();
+  myDeck->print();
 
   return 0;
 }

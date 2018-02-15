@@ -7,8 +7,8 @@
 using namespace std;
 
 void CardDeck::swap(int index1, int index2) {
-  Card temp = this -> cards[index1];
-  cards[index1] = this -> cards[index2];
+  Card temp = this->cards[index1];
+  cards[index1] = this->cards[index2];
   cards[index2] = temp;
 }
 
@@ -54,12 +54,5 @@ Card CardDeck::drawCard() {
   this->currentCardIndex = (this->currentCardIndex + 1) % (this->cards.size());
   return this->cards[last];
 }
-//EGEN KODE: HENT KORT PÅ INDEX I
+// EGEN KODE: HENT KORT PÅ INDEX I
 Card CardDeck::getCard(int index) { return (this->cards)[index]; }
-
-int main(int argc, char const *argv[]) {
-  Card *myCard = new Card;
-  myCard->initialize(HEARTS, TEN);
-  cout << myCard ->toString() << endl;
-  return 0;
-}

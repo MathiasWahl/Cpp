@@ -39,7 +39,7 @@ class CardDeck;
 
 class Card {
 
-protected:
+private:
   CardStruct info;
   bool valid;
 

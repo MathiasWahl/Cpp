@@ -9,7 +9,7 @@ class Card;
 
 class CardDeck {
 
-protected:
+private:
   std::vector<Card> cards;
   int currentCardIndex;
 
